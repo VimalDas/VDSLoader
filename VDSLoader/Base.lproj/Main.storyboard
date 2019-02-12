@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VDSLoader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pi-1i-APj" customClass="VDSLoaderView" customModule="VDSLoader" customModuleProvider="target">
+                                <rect key="frame" x="157.5" y="303.5" width="60" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Wze-KP-ynJ"/>
+                                    <constraint firstAttribute="height" constant="60" id="iWm-B8-iht"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineSize">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFancy" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TXX-tR-3f2" customClass="VDSLoaderView" customModule="VDSLoader" customModuleProvider="target">
+                                <rect key="frame" x="157.5" y="453.5" width="60" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="alk-e9-rxS"/>
+                                    <constraint firstAttribute="width" constant="60" id="lSm-wx-sre"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineSize">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wd2-hU-TuG" customClass="VDSLoaderView" customModule="VDSLoader" customModuleProvider="target">
+                                <rect key="frame" x="157.5" y="183.5" width="60" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="KVG-kF-TxL"/>
+                                    <constraint firstAttribute="width" constant="60" id="hFv-7l-tmu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineSize">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9pi-1i-APj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7Op-ma-x6f"/>
+                            <constraint firstItem="TXX-tR-3f2" firstAttribute="top" secondItem="9pi-1i-APj" secondAttribute="bottom" constant="90" id="C2Y-0I-gYW"/>
+                            <constraint firstItem="Wd2-hU-TuG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H9E-8L-IHP"/>
+                            <constraint firstItem="9pi-1i-APj" firstAttribute="top" secondItem="Wd2-hU-TuG" secondAttribute="bottom" constant="60" id="hEY-5P-fh3"/>
+                            <constraint firstItem="TXX-tR-3f2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mr2-z4-bw2"/>
+                            <constraint firstItem="9pi-1i-APj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wWG-bV-b14"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
