@@ -19,53 +19,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pi-1i-APj" customClass="VDSLoaderView" customModule="VDSLoader" customModuleProvider="target">
-                                <rect key="frame" x="157.5" y="303.5" width="60" height="60"/>
+                                <rect key="frame" x="150" y="296" width="75" height="75"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="Wze-KP-ynJ"/>
-                                    <constraint firstAttribute="height" constant="60" id="iWm-B8-iht"/>
+                                    <constraint firstAttribute="width" constant="75" id="Wze-KP-ynJ"/>
+                                    <constraint firstAttribute="height" constant="75" id="iWm-B8-iht"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="lineSize">
-                                        <real key="value" value="3"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFancy" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFancy" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TXX-tR-3f2" customClass="VDSLoaderView" customModule="VDSLoader" customModuleProvider="target">
-                                <rect key="frame" x="157.5" y="453.5" width="60" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="alk-e9-rxS"/>
-                                    <constraint firstAttribute="width" constant="60" id="lSm-wx-sre"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="lineSize">
-                                        <real key="value" value="4"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wd2-hU-TuG" customClass="VDSLoaderView" customModule="VDSLoader" customModuleProvider="target">
-                                <rect key="frame" x="157.5" y="183.5" width="60" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="KVG-kF-TxL"/>
-                                    <constraint firstAttribute="width" constant="60" id="hFv-7l-tmu"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="lineSize">
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9pi-1i-APj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7Op-ma-x6f"/>
-                            <constraint firstItem="TXX-tR-3f2" firstAttribute="top" secondItem="9pi-1i-APj" secondAttribute="bottom" constant="90" id="C2Y-0I-gYW"/>
-                            <constraint firstItem="Wd2-hU-TuG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H9E-8L-IHP"/>
-                            <constraint firstItem="9pi-1i-APj" firstAttribute="top" secondItem="Wd2-hU-TuG" secondAttribute="bottom" constant="60" id="hEY-5P-fh3"/>
-                            <constraint firstItem="TXX-tR-3f2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mr2-z4-bw2"/>
                             <constraint firstItem="9pi-1i-APj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wWG-bV-b14"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
